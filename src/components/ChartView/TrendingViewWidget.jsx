@@ -49,8 +49,8 @@ function TradingViewWidget(props) {
         </div>
         <div className="flex max-md:flex-col items-baseline gap-4">
           <span className="text-3xl font-bold">{"$"+ arrayData[0].current_price}</span>
-          <span className="text-emerald-500 text-sm font-medium">{arrayData[0].price_change_percentage_24h }</span>
-          <span className="text-gray-600">{arrayData[0].price_change_24h }</span>
+          <span className={` text-sm font-medium ${(arrayData[0].price_change_percentage_24h>=0?"text-emerald-600":"text-red-500")}`}>{arrayData[0].price_change_percentage_24h }</span>
+          <span className={`${(arrayData[0].price_change_percentage_24h>=0?"text-emerald-600":"text-red-500")}`}>{arrayData[0].price_change_24h }</span>
         </div>
       </div>
       <div>

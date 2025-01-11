@@ -1,8 +1,7 @@
 import React from "react";
 
 const MiniChart = (props) => {
-
-    console.log(props.data);
+    
   return (
     <div className="bg-white rounded-xl shadow-sm p-4 w-64">
       <div className="flex items-center gap-2 mb-1">

@@ -1,12 +1,9 @@
 import React from 'react';
 
 const Trending = (props) => {
-  console.log('Props received:', props);
-  
-  // Check if props.coins exists and is an array
+
   const coins = Array.isArray(props.coins) ? props.coins : [];
 
-  // Add error handling for empty or invalid data
   if (!props.coins) {
     return <div className="p-4 bg-white rounded-2xl">Loading...</div>;
   }
@@ -28,7 +25,7 @@ const Trending = (props) => {
               </div>
               <span className="font-medium text-gray-900">{coin.id}</span>
             </div>
-            <div className={`flex items-center ${(coin.price_change_percentage_24h>=0? "text-emerald-600":"text-red-500")}`}>
+            <div className={`flex items-center rounded-md p4 ${(coin.price_change_percentage_24h>=0? "text-emerald-600 bg-emerald-200":"text-red-500 bg-red-300")}`}>
               <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none">
                 <path d="M12 4l-8 8h16l-8-8z" fill="currentColor"/>
               </svg>
