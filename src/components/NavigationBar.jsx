@@ -15,7 +15,7 @@ const NavigationBar = () => {
 
   return (
     <nav className="border-b border-gray-200">
-      <div className="flex space-x-8">
+      <div className="flex space-x-8 overflow-scroll">
         {navItems.map((item) => (
           <a
             key={item}

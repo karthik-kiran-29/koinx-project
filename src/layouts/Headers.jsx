@@ -11,7 +11,7 @@ function Headers() {
         />
       </div>
       
-      <div className="hidden md:flex items-center space-x-8">
+      <div className="hidden items-center space-x-8">
         <a 
           href="#" 
           className="text-gray-800 hover:text-blue-600 font-medium"
