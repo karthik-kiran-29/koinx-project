@@ -1,29 +1,66 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Trending = () => {
-  const coins = [
-    {
-      icon: "ethereum",
-      name: "Ethereum(ETH)",
-      percentage: "8.21%"
-    },
-    {
-      icon: "bitcoin",
-      name: "Bitcoin (BTC)",
-      percentage: "5.26%"
-    },
-    {
-      icon: "polygon",
-      name: "Polygon (MATIC)",
-      percentage: "4.32%"
-    }
-  ];
+  const [trendingCoins, setTrendingCoins] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    const fetchTrending = async () => {
+      const url = 'https://api.coingecko.com/api/v3/search/trending';
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json', 
+          'x-cg-demo-api-key': 'CG-xNtyHFnqTM68rYZ2P841Aud3'
+        }
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const data = await response.json();
+        
+        console.log(data)
+
+        const formattedCoins = data.coins.map(coin => ({
+          name: coin.item.name,
+          symbol: coin.item.symbol.toUpperCase(),
+          icon: getIconType(coin.item.symbol.toLowerCase()),
+          percentage: `${(coin.item.price_btc * 100).toFixed(2)}%`
+        }));
+        setTrendingCoins(formattedCoins);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchTrending();
+  }, []);
+
+  // Helper function to determine icon type
+  const getIconType = (symbol) => {
+    if (symbol.includes('eth')) return 'ethereum';
+    if (symbol.includes('btc')) return 'bitcoin';
+    return 'polygon'; // default icon
+  };
+
+  if (isLoading) {
+    return (
+      <div className="p-4 bg-white rounded-2xl">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Trending Coins (24h)</h2>
+        <div className="space-y-4">
+          <div>Loading...</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="p-4 bg-white rounded-2xl">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Trending Coins (24h)</h2>
       <div className="space-y-4">
-        {coins.map((coin, index) => (
+        {trendingCoins.map((coin, index) => (
           <div key={index} className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className={`w-8 h-8 rounded-full flex items-center justify-center
@@ -45,7 +82,10 @@ const Trending = () => {
                   </svg>
                 )}
               </div>
-              <span className="font-medium text-gray-900">{coin.name}</span>
+              <div>
+                <span className="font-medium text-gray-900">{coin.name}</span>
+                <span className="ml-2 text-sm text-gray-500">{coin.symbol}</span>
+              </div>
             </div>
             <div className="flex items-center text-emerald-500">
               <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none">
