@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Headers() {
   return (
     <nav className="flex items-center justify-between px-4 py-4 shadow-sm bg-white">
       <div className="flex items-center">
@@ -38,4 +38,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Headers;

@@ -20,7 +20,7 @@ const Trending = () => {
   ];
 
   return (
-    <div className="p-4 max-w-md">
+    <div className="p-4 max-w-md bg-white rounded-2xl">
       <h2 className="text-2xl font-bold text-gray-900 mb-4">Trending Coins (24h)</h2>
       <div className="space-y-4">
         {coins.map((coin, index) => (
