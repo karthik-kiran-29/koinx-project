@@ -3,7 +3,7 @@ import React from "react";
 function Tokenomics(){
 
     return(
-        <div className="mx-auto p-6">
+        <div className="mx-auto p-6 bg-white rounded-xl">
       <h1 className="text-3xl font-bold mb-8">Tokenomics</h1>
       
       <div className="mb-8">
