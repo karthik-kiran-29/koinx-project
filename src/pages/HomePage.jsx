@@ -45,7 +45,7 @@ function HomePage() {
         <MainLayout data={data} />
         <SideLayout data={data}/>
       </div>
-      <Footer />
+      <Footer data={data}/>
     </div>
   );
 }
