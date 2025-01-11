@@ -3,7 +3,7 @@ import React from "react";
 function Fundamentals(){
 
     return(
-        <div className="p-6 border-t border-gray-200">
+        <div className="p-6 border-t border-gray-200" id="Fundamentals">
       <div className="flex items-center gap-2 mb-6">
         <h2 className="text-2xl font-bold">Fundamentals</h2>
         <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -5,7 +5,7 @@ import AnalystEstimation from "./AnalystEstimation";
 function Sentiment(){
     
     return(
-    <div className="mx-auto bg-white rounded-lg shadow">
+    <div className="mx-auto bg-white rounded-lg shadow" id="Sentiments">
       <h1 className="text-2xl font-semibold p-6 border-b">Sentiment</h1>
         <KeyEventsSection />
         <AnalystEstimation />

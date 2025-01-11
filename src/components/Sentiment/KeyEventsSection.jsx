@@ -3,7 +3,7 @@ import React from "react";
 function KeyEventsSection(){
 
     return(
-        <div className="p-6">
+        <div className="p-6" id="News Insights">
         <h2 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
           Key Events
           <span className="ml-2 w-4 h-4 bg-gray-200 rounded-full flex items-center justify-center text-xs text-gray-600">i</span>

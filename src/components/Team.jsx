@@ -2,7 +2,7 @@ import React from "react";
 
 function Team() {
   return (
-    <div className="mx-auto px-4 py-4 bg-white rounded-xl">
+    <div className="mx-auto px-4 py-4 bg-white rounded-xl" id="Team">
       <h1 className="text-4xl font-bold mb-4">Team</h1>
       
       <p className="text-gray-600 mb-12 max-w-3xl">

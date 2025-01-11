@@ -4,7 +4,7 @@ function About() {
 
     
   return (
-    <div className=" mx-auto px-4 py-8 bg-white rounded-xl">
+    <div className=" mx-auto px-4 py-8 bg-white rounded-xl" id="Technicals">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-[#0F1629] mb-4">What is Bitcoin?</h2>
         <p className="text-base text-gray-700 leading-relaxed">

@@ -31,7 +31,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="w-full max-w-6xl bg-white rounded-lg shadow-sm p-6">
+    <div className="w-full max-w-6xl bg-white rounded-lg shadow-sm p-6" id="Overview">
       <div className="mb-6">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
