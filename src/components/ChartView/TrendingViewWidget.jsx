@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, memo } from 'react';
 
-function TradingViewWidget() {
+function TradingViewWidget({inr,usd,usd_24h_vol}) {
   const container = useRef();
-
+  
   useEffect(
     () => {
       const script = document.createElement("script");
@@ -46,9 +46,9 @@ function TradingViewWidget() {
           </div>
         </div>
         <div className="flex max-md:flex-col items-baseline gap-4">
-          <span className="text-3xl font-bold">$46,953.04</span>
-          <span className="text-emerald-500 text-sm font-medium">▲ 2.51% (24H)</span>
-          <span className="text-gray-600">₹ 39,42,343</span>
+          <span className="text-3xl font-bold">{"$"+ usd + ".56"}</span>
+          <span className="text-emerald-500 text-sm font-medium">{(usd_24h_vol - 23390913131.63872) > 0 ?("▲ "+ (usd_24h_vol - 23390913131.63872) +"(24H)"):("▼"+ (usd_24h_vol - 23390913131.63872) +"(24H)")}</span>
+          <span className="text-gray-600">{"₹" + inr}</span>
         </div>
       </div>
       <div>
