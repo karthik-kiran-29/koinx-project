@@ -43,7 +43,7 @@ function HomePage() {
       <div className='text-black md:mx-10 mx-1 p-4'>Cryptocurrency &gt;&gt; Bitcoin</div>
       <div className='md:flex'>
         <MainLayout data={data} />
-        <SideLayout />
+        <SideLayout data={data}/>
       </div>
       <Footer />
     </div>
