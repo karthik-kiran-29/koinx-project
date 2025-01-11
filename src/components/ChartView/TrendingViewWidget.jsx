@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, memo } from 'react';
+import React, { useEffect, useRef, memo, useState } from 'react';
 
-function TradingViewWidget({inr,usd,usd_24h_vol}) {
+function TradingViewWidget(props) {
   const container = useRef();
-  
+
+  const [arrayData,setArrayData] = useState(props);
+
   useEffect(
     () => {
       const script = document.createElement("script");
@@ -36,19 +38,19 @@ function TradingViewWidget({inr,usd,usd_24h_vol}) {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white text-xl">₿</span>
+              <span className="text-white text-xl"><img src={arrayData[0].image} /></span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-xl font-semibold">Bitcoin</span>
+              <span className="text-xl font-semibold">{arrayData[0].id}</span>
               <span className="text-gray-500">BTC</span>
               <span className="bg-gray-400 text-white px-3 py-1 rounded-md text-sm">Rank #1</span>
             </div>
           </div>
         </div>
         <div className="flex max-md:flex-col items-baseline gap-4">
-          <span className="text-3xl font-bold">{"$"+ usd + ".56"}</span>
-          <span className="text-emerald-500 text-sm font-medium">{(usd_24h_vol - 23390913131.63872) > 0 ?("▲ "+ (usd_24h_vol - 23390913131.63872) +"(24H)"):("▼"+ (usd_24h_vol - 23390913131.63872) +"(24H)")}</span>
-          <span className="text-gray-600">{"₹" + inr}</span>
+          <span className="text-3xl font-bold">{"$"+ arrayData[0].current_price}</span>
+          <span className="text-emerald-500 text-sm font-medium">{arrayData[0].price_change_percentage_24h }</span>
+          <span className="text-gray-600">{arrayData[0].price_change_24h }</span>
         </div>
       </div>
       <div>
