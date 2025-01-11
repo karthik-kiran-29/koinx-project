@@ -1,6 +1,8 @@
 import React from "react";
 
-const About = () => {
+function About() {
+
+    
   return (
     <div className=" mx-auto px-4 py-8 bg-white">
       <div className="mb-8">
