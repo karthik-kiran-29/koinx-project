@@ -11,7 +11,7 @@ function Fundamentals(){
           <path strokeWidth="2" d="M12 16v-4m0-4h.01"/>
         </svg>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="md:grid md:grid-cols-2 gap-6">
         <div className="space-y-4">
           <div className="flex justify-between py-2 border-b border-gray-100">
             <span className="text-gray-500">Bitcoin Price</span>
@@ -19,7 +19,7 @@ function Fundamentals(){
           </div>
           <div className="flex justify-between py-2 border-b border-gray-100">
             <span className="text-gray-500">24h Low / 24h High</span>
-            <span className="font-semibold">${Number(16382.07).toLocaleString()} / ${Number(16874.12).toLocaleString()}</span>
+            <span className="font-semibold max-md:text-xs">${Number(16382.07).toLocaleString()} / ${Number(16874.12).toLocaleString()}</span>
           </div>
           <div className="flex justify-between py-2 border-b border-gray-100">
             <span className="text-gray-500">7d Low / 7d High</span>

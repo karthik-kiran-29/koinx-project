@@ -4,7 +4,7 @@ function About() {
 
     
   return (
-    <div className=" mx-auto px-4 py-8 bg-white rounded-xl" id="Technicals">
+    <div className="mx-auto px-4 py-8 bg-white rounded-xl" id="Technicals">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-[#0F1629] mb-4">What is Bitcoin?</h2>
         <p className="text-base text-gray-700 leading-relaxed">
@@ -36,7 +36,7 @@ function About() {
                 className="w-32 h-32 object-cover rounded-lg mr-4"
               />
               <div>
-                <h3 className="text-xl font-semibold text-white mb-4">Calculate your Profits</h3>
+                <h3 className="md:text-xl font-semibold text-white mb-4">Calculate your Profits</h3>
                 <button className="bg-white text-[#0F1629] px-4 py-2 rounded-lg flex items-center">
                   Check Now 
                   <svg className="ml-2" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@ function About() {
                 className="w-32 h-32 object-cover rounded-lg mr-4"
               />
               <div>
-                <h3 className="text-xl font-semibold text-white mb-4">Calculate your tax liability</h3>
+                <h3 className="md:text-xl font-semibold text-white mb-4">Calculate your tax liability</h3>
                 <button className="bg-white text-[#0F1629] px-4 py-2 rounded-lg flex items-center">
                   Check Now
                   <svg className="ml-2" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">

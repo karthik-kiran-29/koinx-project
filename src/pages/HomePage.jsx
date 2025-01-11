@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <div className='bg-gray-200'>
        <Headers/>
-       <div className='black mx-10 p-4'>Cryptocurrency &gt;&gt; Bitcoin</div>
+       <div className='black md:mx-10 mx-1 p-4'>Cryptocurrency &gt;&gt; Bitcoin</div>
        <div className='md:flex'>
           <MainLayout/>
           <SideLayout/>

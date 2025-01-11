@@ -45,7 +45,7 @@ function TradingViewWidget() {
             </div>
           </div>
         </div>
-        <div className="flex items-baseline gap-4">
+        <div className="flex max-md:flex-col items-baseline gap-4">
           <span className="text-3xl font-bold">$46,953.04</span>
           <span className="text-emerald-500 text-sm font-medium">▲ 2.51% (24H)</span>
           <span className="text-gray-600">₹ 39,42,343</span>

@@ -10,7 +10,7 @@ import NavigationBar from "../components/NavigationBar";
 function MainLayout(){
 
     return(
-        <div className="w-2/3 mx-10 space-y-8">
+        <div className="md:w-2/3 md:mx-10 mx-1 space-y-8">
            <TrendingViewWidget/>
            <NavigationBar/>
            <PerformanceSection/>

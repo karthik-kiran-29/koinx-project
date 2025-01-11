@@ -5,7 +5,7 @@ import Trending from "../components/Trending";
 function SideLayout(){
 
     return(
-        <div className="w-1/3 mx-10 space-y-8">
+        <div className=" md:w-1/3 md:mx-10 mx-1 space-y-8">
             <GetStarted/>
             <Trending/>
         </div>
