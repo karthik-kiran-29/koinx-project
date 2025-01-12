@@ -14,7 +14,7 @@ function Team() {
         <div className="bg-blue-50 rounded-lg p-6 flex flex-col md:flex-row gap-6">
           <div className="flex-shrink-0 w-full md:w-48">
             <img 
-              src="public\static\assets\Team_Section_Sundar.webp" 
+              src="static\assets\Team_Section_Sundar.webp" 
               alt="John Smith" 
               className="w-32 h-32 rounded-lg object-cover mb-4"
             />
@@ -32,7 +32,7 @@ function Team() {
         <div className="bg-blue-50 rounded-lg p-6 flex flex-col md:flex-row gap-6">
           <div className="flex-shrink-0 w-full md:w-48">
             <img 
-              src="public\static\assets\Team_Section_catty.webp" 
+              src="static\assets\Team_Section_catty.webp" 
               alt="Elina Williams" 
               className="w-32 h-32 rounded-lg object-cover mb-4"
             />
@@ -50,7 +50,7 @@ function Team() {
         <div className="bg-blue-50 rounded-lg p-6 flex flex-col md:flex-row gap-6">
           <div className="flex-shrink-0 w-full md:w-48">
             <img 
-              src="public/static/assets/Team_Section_oran.webp" 
+              src="static/assets/Team_Section_oran.webp" 
               alt="John Smith" 
               className="w-32 h-32 rounded-lg object-cover mb-4"
             />

@@ -31,7 +31,7 @@ function About() {
           <div className="bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-lg p-4">
             <div className="flex items-center">
               <img 
-                src="public\static\assets\About_Section_1.webp"
+                src="static\assets\About_Section_1.webp"
                 alt="Calculate profits" 
                 className="w-32 h-32 object-cover rounded-lg mr-4"
               />
@@ -51,7 +51,7 @@ function About() {
           <div className="bg-gradient-to-r from-orange-400 to-red-400 rounded-lg p-4">
             <div className="flex items-center">
               <img 
-                src="public\static\assets\About_Section_2.webp"
+                src="static\assets\About_Section_2.webp"
                 alt="Calculate tax" 
                 className="w-32 h-32 object-cover rounded-lg mr-4"
               />
