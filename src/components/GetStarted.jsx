@@ -13,7 +13,7 @@ function GetStarted(){
         </div>
         
         <img 
-          src='src\assets\GetStarted_Section.png'
+          src='public\static\assets\GetStarted_Section.webp'
           alt='Get started animated'
           className="mx-auto my-12"
         />

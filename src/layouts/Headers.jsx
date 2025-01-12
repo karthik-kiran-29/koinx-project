@@ -8,7 +8,7 @@ function Headers() {
       <div className="flex items-center justify-between px-4 py-4 shadow-sm bg-white">
         <div className="flex items-center">
           <img 
-            src="src/assets/logo.png" 
+            src="public\static\assets\logo.webp" 
             alt="brand-logo"
             className="h-6 w-auto"
           />
